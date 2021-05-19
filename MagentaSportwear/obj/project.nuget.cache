@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WTuTGXs211b25ud4Fd0JHVyxBCUcsUFLL6zOgthLO9/UksBin6DuspRK45yhYDZybrLfFU2wr8tPiaAOpHwv5Q==",
+  "dgSpecHash": "SRnAzoT2qZMjTAHsh+nblNaIH/sJ6X+bsdz5G8GKjCzrKGMrD+Ox3y9dGHcmg4TySkGZrEuOXqd1wVqvt9bt7A==",
   "success": true,
-  "projectFilePath": "D:\\Programacion\\MagentaGithub\\MagentaSportwear\\MagentaSportwear.csproj",
+  "projectFilePath": "D:\\Development\\C#\\MagentaGithub\\MagentaSportwear\\MagentaSportwear.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\bootstrap\\4.6.0\\bootstrap.4.6.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",

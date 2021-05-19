@@ -9198,19 +9198,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lucas\\.nuget\\packages\\": {}
+    "C:\\Users\\lucas\\.nuget\\packages\\": {},
+    "D:\\Programs\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programacion\\MagentaGithub\\MagentaSportwear\\MagentaSportwear.csproj",
+      "projectUniqueName": "D:\\Development\\C#\\MagentaGithub\\MagentaSportwear\\MagentaSportwear.csproj",
       "projectName": "MagentaSportwear",
-      "projectPath": "D:\\Programacion\\MagentaGithub\\MagentaSportwear\\MagentaSportwear.csproj",
+      "projectPath": "D:\\Development\\C#\\MagentaGithub\\MagentaSportwear\\MagentaSportwear.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "D:\\Programacion\\MagentaGithub\\MagentaSportwear\\obj\\",
+      "outputPath": "D:\\Development\\C#\\MagentaGithub\\MagentaSportwear\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Programs\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9287,7 +9292,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
