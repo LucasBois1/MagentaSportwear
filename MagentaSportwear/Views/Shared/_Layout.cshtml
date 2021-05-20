@@ -15,7 +15,7 @@
 
     </head>
 
-    <body style="background-color: #F7F7F7;">
+    <body class="user-select-none" style="background-color: #F7F7F7;">
         <!-- Main Navbar -->
         <header>
             <nav class="navbar navbar-expand-md navbar-toggleable-md navbar-dark box-shadow border-bottom" style="background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
@@ -35,7 +35,7 @@
                                 <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Shop">Tienda</a>
+                                <a class="nav-link text-white" asp-area="" asp-controller="Tienda" asp-action="Index">Tienda</a>
                             </li>
                             @if (SignInManager.IsSignedIn(User))
                             {
@@ -52,6 +52,9 @@
             <div class="container d-flex justify-content-around">
 
                 <ul class="nav nav-pills" style="margin-right: 5%;">
+                    <li class="nav-item" style="font-size: 13px; margin-right: 10px; background-color: #667eea; border-radius: 5px;">
+                        <a class="nav-link" href="#" style="color: white;"> Remeras </a>
+                    </li>
                     <li class="nav-item" style="font-size: 13px; margin-right: 10px; background-color: #667eea; border-radius: 5px;">
                         <a class="nav-link" href="#" style="color: white;"> Pantalones </a>
                     </li>
@@ -81,9 +84,9 @@
         </div>
 
         <!-- Footer -->
-        <footer class="footer mt-auto sticky-bottom py-3 bg-light">
+        <footer class="footer mt-auto sticky-bottom py-3 justify-content-center">
             <center>
-                <div class="container">
+                <div class="container" style="text-align: center;">
                     &copy; Lucas Bois 2021 - MagentaSportwear
                 </div>
             </center>
