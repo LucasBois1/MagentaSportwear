@@ -408,8 +408,6 @@ D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Magenta
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.pdb
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.genruntimeconfig.cache
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\Tienda\Index.cshtml.g.cs
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.RazorComponent.input.cache
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\RazorDeclaration\Views\Shared\LoadingScreen.razor.g.cs
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.RazorComponent.output.cache
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\RazorDeclaration\MagentaSportwear.dll
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\Shared\LoadingScreen.razor.g.cs
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\AdminPanel\Index.cshtml.g.cs
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\AdminPanel\Articulos.cshtml.g.cs
