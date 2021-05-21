@@ -2,6 +2,109 @@
     Layout = "/Views/Shared/_AdminLayout.cshtml";
 }
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+
 <hr style="margin: 2%; color: #F7F7F7;" />
 
 <h3> Inicio </h3>
+
+<hr style="margin: 1%; color: #F7F7F7;" />
+
+<div class="row">
+    <div class="shadow-sm card mb-3" style="max-width: 540px; margin-right: 2%; width: 25%;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://img.icons8.com/small/80/000000/shopping-cart.png" />
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Nuevas Ordenes</h5>
+                    <p class="card-text"> +25 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-sm card mb-3" style="max-width: 540px; margin-right: 2%; width: 25%;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="..." alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Nuevos Usuarios</h5>
+                    <p class="card-text"> + 128 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr style="margin: 1%; color: #F7F7F7;" />
+
+<div class="row">
+    <div class="col">
+        <div class="shadow" style="background-color: #fcfcfc; padding: 2%; border-radius: 5px; max-width: 700px;">
+            <div style="height: 40%; width: 100%;">
+                <canvas id="General" width="500" height="200"></canvas>
+                <script>
+                    var ctx = document.getElementById('General').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: ['Enero', 'Febreo', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                            datasets: [{
+                                label: 'N° de Ventas',
+                                data: [140, 78, 47, 25, 34, 15],
+                                backgroundColor: 'rgb(54, 162, 235)',
+                                borderColor: 'rgb(54, 162, 235)',
+                                tension: 0.5,
+                            },
+                            {
+                                label: 'N° de Usuarios',
+                                data: [2, 13, 34, 105, 143, 203],
+                                backgroundColor: 'rgb(70, 199, 145)',
+                                borderColor: 'rgb(70, 199, 145)',
+                                tension: 0.5,
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="shadow" style="background-color: #fcfcfc; padding: 2%; border-radius: 5px;">
+            <canvas id="VentasPorCat" width="500" height="200"></canvas>
+            <script>
+                var ctx = document.getElementById('VentasPorCat').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Remeras', 'Tops', 'Calzas', 'Pantalones', 'Shorts'],
+                        datasets: [{
+                            label: 'Ventas por categoria',
+                            data: [120, 75, 68, 51, 27],
+                            backgroundColor: [
+                                'rgb(255, 99, 132)',
+                                'rgb(54, 162, 235)',
+                                'rgb(255, 205, 86)',
+                                'rgb(70, 199, 145)',
+                                'rgb(242, 115, 72)',
+                                'rgb(178, 181, 185)',
+                                'rgb(64, 57, 62)'
+                            ],
+                            hoverOffset: 4
+                        }]
+                    },
+                });
+            </script>
+        </div>
+    </div>
+</div>
