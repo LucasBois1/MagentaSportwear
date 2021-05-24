@@ -35,16 +35,15 @@ namespace AspNetCoreTodo
 
         private static async Task EnsureTestAdminAsync( UserManager<ApplicationUser> userManager )
         {
-            var testAdmin = await userManager.Users.Where(x => x.Email == "admin@magenta").SingleOrDefaultAsync();
+            var testAdmin = await userManager.Users.Where(x => x.Email == "lucasjkjk@gmail.com").SingleOrDefaultAsync();
 
             if (testAdmin != null) return;
 
             testAdmin = new ApplicationUser
             {
-                Email = "admin@magenta",
-            
+                Email = "lucasjkjk@gmail.com"
             };
-            await userManager.CreateAsync( testAdmin, "12345A_");
+            //await userManager.CreateAsync( testAdmin, "12345Aa_");
             await userManager.AddToRoleAsync( testAdmin, Constants.AdministratorRole);
         }
     }
