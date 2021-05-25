@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using MagentaSportwear.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AspNetCoreTodo
+namespace MagentaSportwear.Models
 {
     public static class SeedData
     {
