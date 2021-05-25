@@ -203,6 +203,13 @@ D:\Programacion\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSp
 D:\Programacion\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.dll
 D:\Programacion\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.pdb
 D:\Programacion\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.genruntimeconfig.cache
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.AssemblyInfoInputs.cache
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.AssemblyInfo.cs
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.csproj.CoreCompileInputs.cache
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.MvcApplicationPartsAssemblyInfo.cs
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.MvcApplicationPartsAssemblyInfo.cache
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.RazorAssemblyInfo.cache
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.RazorAssemblyInfo.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\MagentaSportwear.StaticWebAssets.xml
@@ -339,13 +346,6 @@ D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\runtime
 D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.AssemblyInfoInputs.cache
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.AssemblyInfo.cs
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.csproj.CoreCompileInputs.cache
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.MvcApplicationPartsAssemblyInfo.cs
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.MvcApplicationPartsAssemblyInfo.cache
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.RazorAssemblyInfo.cache
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.RazorAssemblyInfo.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\staticwebassets\MagentaSportwear.StaticWebAssets.Manifest.cache
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\staticwebassets\MagentaSportwear.StaticWebAssets.xml
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\scopedcss\bundle\MagentaSportwear.styles.css

@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using MagentaSportwear.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AspNetCoreTodo
+namespace MagentaSportwear.Models
 {
     public static class SeedData
     {
@@ -15,10 +14,12 @@ namespace AspNetCoreTodo
         {
             var roleManager = services
                 .GetRequiredService<RoleManager<IdentityRole>>();
+
             await EnsureRolesAsync(roleManager);
 
             var userManager = services
                 .GetRequiredService<UserManager<ApplicationUser>>();
+
             await EnsureTestAdminAsync(userManager);
         }
 
@@ -29,23 +30,26 @@ namespace AspNetCoreTodo
 
             if (alreadyExists) return;
 
-            await roleManager.CreateAsync(
-                new IdentityRole(Constants.AdministratorRole));
+            await roleManager.CreateAsync(new IdentityRole(Constants.AdministratorRole));
         }
 
         private static async Task EnsureTestAdminAsync( UserManager<ApplicationUser> userManager )
         {
             var testAdmin = await userManager.Users.Where(x => x.Email == "admin@magenta").SingleOrDefaultAsync();
 
-            if (testAdmin != null) return;
-
-            testAdmin = new ApplicationUser
+            if (testAdmin == null)
             {
-                Email = "admin@magenta",
-            
-            };
-            await userManager.CreateAsync( testAdmin, "12345A_");
+                testAdmin = new ApplicationUser
+                {
+                    UserName = "admin",
+                    Email = "admin@magenta"
+                };
+
+                await userManager.CreateAsync(testAdmin, "kho257Lucas_");
+            }
+
             await userManager.AddToRoleAsync( testAdmin, Constants.AdministratorRole);
+            await userManager.UpdateAsync(testAdmin);
         }
     }
 }

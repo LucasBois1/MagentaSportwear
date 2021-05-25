@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,6 +28,8 @@ namespace MagentaSportwear.Controllers
         // GET: AdminController
         public async Task<IActionResult> Index()
         {
+            Console.WriteLine(_logger);
+
             var admins = (await _userManager
                 .GetUsersInRoleAsync("Administrator"))
                 .ToArray();
@@ -34,7 +37,7 @@ namespace MagentaSportwear.Controllers
             var everyone = await _userManager.Users
                 .ToArrayAsync();
 
-            var model = new AdminPanelViewModel
+            _ = new AdminPanelViewModel
             {
                 Administrators = admins,
                 Everyone = everyone
@@ -52,7 +55,7 @@ namespace MagentaSportwear.Controllers
             var everyone = await _userManager.Users
                 .ToArrayAsync();
 
-            var model = new AdminPanelViewModel
+            _ = new AdminPanelViewModel
             {
                 Administrators = admins,
                 Everyone = everyone

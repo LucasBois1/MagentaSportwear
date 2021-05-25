@@ -20,6 +20,7 @@ namespace MagentaSportwear.Controllers
 
         public IActionResult Index()
         {
+            Console.WriteLine(_logger);
             return View();
         }
 
