@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace MagentaSportwear.Controllers
 {
-    //[Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Administrator")]
     public class AdminPanelController : Controller
     {
 
