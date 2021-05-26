@@ -12,7 +12,7 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build-env /app/out .
 
-ENV ASPNETCORE_ENVIRONMENT=”Production”
+#ENV ASPNETCORE_ENVIRONMENT=”Production”
 
 #ENTRYPOINT ["dotnet", "MagentaSportwear.dll"]
 
