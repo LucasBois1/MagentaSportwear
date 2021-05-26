@@ -41,7 +41,7 @@ namespace MagentaSportwear.Models
             {
                 testAdmin = new ApplicationUser
                 {
-                    UserName = "admin",
+                    UserName = "admin@magenta",
                     Email = "admin@magenta"
                 };
 
