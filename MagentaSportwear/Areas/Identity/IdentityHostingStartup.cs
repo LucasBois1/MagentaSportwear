@@ -1,12 +1,17 @@
 ﻿using MagentaSportwear.Data;
 using MagentaSportwear.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
 
 [assembly: HostingStartup(typeof(MagentaSportwear.Areas.Identity.IdentityHostingStartup))]
 namespace MagentaSportwear.Areas.Identity
@@ -24,15 +29,16 @@ namespace MagentaSportwear.Areas.Identity
                     .AddRoles<IdentityRole>()
                     .AddEntityFrameworkStores<ApplicationDbContext>();
                 services.AddIdentityCore<IdentityUser>();
-                services.AddControllersWithViews(options =>
+                services.AddAuthentication();
+                /*services.AddControllersWithViews(options =>
                 {
                     var policy = new AuthorizationPolicyBuilder()
                         .RequireAuthenticatedUser()
                         .Build();
                     options.Filters.Add(new AuthorizeFilter(policy));
-                });
+                });*/
                 services.AddRazorPages();
             });
         }
+        }
     }
-}

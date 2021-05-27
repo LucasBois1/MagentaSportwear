@@ -22,7 +22,7 @@
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,
-    "keyFile": "",
+    "keyFile": "magentasign.pfx",
     "emitEntryPoint": true,
     "xmlDoc": false,
     "debugType": "portable"
