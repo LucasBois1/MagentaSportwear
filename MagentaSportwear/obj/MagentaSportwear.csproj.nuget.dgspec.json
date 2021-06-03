@@ -68,6 +68,10 @@
               "target": "Package",
               "version": "[3.1.5, )"
             },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
             "SendGrid": {
               "target": "Package",
               "version": "[9.22.0, )"

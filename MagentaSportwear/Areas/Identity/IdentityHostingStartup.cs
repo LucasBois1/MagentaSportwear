@@ -22,7 +22,7 @@ namespace MagentaSportwear.Areas.Identity
         {
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(
+                    options.UseMySQL(
                         context.Configuration.GetConnectionString("DefaultConnection")));
                 services.AddDefaultIdentity<ApplicationUser>()
                     .AddSignInManager()
@@ -30,13 +30,6 @@ namespace MagentaSportwear.Areas.Identity
                     .AddEntityFrameworkStores<ApplicationDbContext>();
                 services.AddIdentityCore<IdentityUser>();
                 services.AddAuthentication();
-                /*services.AddControllersWithViews(options =>
-                {
-                    var policy = new AuthorizationPolicyBuilder()
-                        .RequireAuthenticatedUser()
-                        .Build();
-                    options.Filters.Add(new AuthorizeFilter(policy));
-                });*/
                 services.AddRazorPages();
             });
         }

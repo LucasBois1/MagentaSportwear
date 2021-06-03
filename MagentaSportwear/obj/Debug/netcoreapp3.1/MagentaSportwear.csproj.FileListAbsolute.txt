@@ -391,8 +391,8 @@ D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\A
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\AdminPanel\Articulos.cshtml.g.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\AdminPanel\Index.cshtml.g.cs
+D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\AdminPanel\Registros.cshtml.g.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -410,3 +410,15 @@ D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\Magenta
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.dll
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.pdb
 D:\Development\C#\MagentaGithub\MagentaSportwear\obj\Debug\netcoreapp3.1\MagentaSportwear.genruntimeconfig.cache
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\MySql.Data.EntityFrameworkCore.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+D:\Development\C#\MagentaGithub\MagentaSportwear\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll

@@ -22,13 +22,10 @@
             .side-menu {
                 background-color: white;
                 border-radius: 15px;
-                margin-top: 3%;
-                margin-left: 3%;
             }
 
             .side-ul {
                 list-style-type: none;
-                padding-top: 15%;
             }
 
             .side-item {
@@ -40,15 +37,6 @@
                 margin-right: 2rem;
             }
 
-            .text-nowrap {
-                display: none;
-            }
-
-            .icon:hover + .hide {
-                display: inline-flex;
-                color: black;
-                padding-left: 6px;
-            }
         </style>
 
         <!-- Main Navbar -->
@@ -67,7 +55,7 @@
                     </ul>
                     <ul class="navbar-nav flex-grow-1 position-absolute end-0" style="margin-right: 20%;">
                         <li class="nav-item">
-                            <a href="" class="nav-link text-white"> Hola @User.Identity.Name </a>
+                            <a asp-area="Identity" asp-page="/Account/Manage/Index" class="nav-link text-white">Hola @User.Identity.Name </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Salir</a>
@@ -85,27 +73,24 @@
                 <div class="side-menu box-shadow position-absolute start-0">
 
                     <ul class="side-ul">
-                        <li class="side-item">
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Inicio">
                             <a href="/AdminPanel">
                                 <div class="d-flex">
-                                    <span class="icon"> <img src="https://img.icons8.com/small/20/000000/home-page.png" /> </span>
-                                    <span class="text-nowrap hide">Inicio</span>
+                                    <span class="icon"> <img src="https://img.icons8.com/small/30/000000/home-page.png" /> </span>
                                 </div>
                             </a>
                         </li>
-                        <li class="side-item">
-                            <a href="/AdminPanel/Articulos">
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Registros">
+                            <a href="/AdminPanel/Registros">
                                 <div class="d-flex">
-                                    <span class="icon"> <img src="https://img.icons8.com/small/20/000000/hanger.png" /> </span>
-                                    <span class="text-nowrap hide">Articulos</span>
+                                    <span class="icon"> <img src="https://img.icons8.com/small/30/000000/database.png" /> </span>
                                 </div>
                             </a>
                         </li>
-                        <li class="side-item">
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Descargar datos">
                             <a href="/AdminPanel/DescargarEstadisticas">
                                 <div class="d-flex">
-                                    <span class="icon"> <img src="https://img.icons8.com/small/20/000000/export-csv.png" /> </span>
-                                    <span class="text-nowrap hide">Descargar Estadisticas</span>
+                                    <span class="icon"> <img src="https://img.icons8.com/small/30/000000/export-csv.png" /> </span>
                                 </div>
                             </a>
                         </li>

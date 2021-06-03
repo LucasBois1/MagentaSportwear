@@ -46,7 +46,7 @@ namespace MagentaSportwear.Controllers
             return View();
         }
 
-        public async Task<ActionResult> Articulos()
+        public async Task<ActionResult> Registros()
         {
             var admins = (await _userManager
                 .GetUsersInRoleAsync("Administrator"))
