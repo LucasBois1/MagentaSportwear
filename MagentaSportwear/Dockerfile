@@ -1,18 +1,24 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
-
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
+EXPOSE 80
+EXPOSE 443
 
-COPY *.csproj ./
-RUN dotnet restore
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+COPY ["MagentaSportwear.csproj", "MagentaSportwear/"]
+RUN dotnet restore "MagentaSportwear/MagentaSportwear.csproj"
 
-COPY . ./
-RUN dotnet publish -c Release -o out
+COPY . /src/MagentaSportwear/
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+WORKDIR "/src/MagentaSportwear"
+RUN dotnet build -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish -c Release -o /app/publish
+
+FROM base AS final
 WORKDIR /app
-COPY --from=build-env /app/out .
-
-ENV ASPNETCORE_ENVIRONMENT=”Production”
+COPY --from=publish /app/publish .
 
 #ENTRYPOINT ["dotnet", "MagentaSportwear.dll"]
 
