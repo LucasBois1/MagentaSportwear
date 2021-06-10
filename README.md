@@ -8,7 +8,7 @@
 
 <p align="center">
   This is a standard eCommerce website hosted on Heroku using docker and <strong>.NET 5.0 C#</strong> <br>
-  It communicates trought <strong>API Rest</strong> with a <strong>AWS RDS</strong> MySql free tier database. <br>
+  It communicates trought a <strong>Rest API</strong> with an <strong>AWS RDS</strong> MySql free tier database. <br>
   This WebApp has a role system, it has administrator roles to prevent unauthorized access to the product administration panel.
 </p>
 
