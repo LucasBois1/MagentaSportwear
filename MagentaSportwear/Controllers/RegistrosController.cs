@@ -10,7 +10,8 @@ namespace MagentaSportwear.Controllers
     public class RegistrosController : Controller
     {
         [HttpPost]
-        public JsonResult AddArticulo(string nombre, int precio)
+        public JsonResult AddArticulo(string nombre, int precioxs, int precios, int preciom, int preciol, int precioxl,
+            int stockxs, int stocks, int stockm, int stockl, int stockxl)
         {
 
             if (nombre != null)
@@ -26,7 +27,16 @@ namespace MagentaSportwear.Controllers
                 var Articulo = new ApplicationDbContext.Articulo
                 {
                     Nombre = nombre,
-                    Precio = precio
+                    PrecioXS = precioxs,
+                    PrecioS = precios,
+                    PrecioM = preciom,
+                    PrecioL = preciol,
+                    PrecioXL = precioxl,
+                    StockXS = stockxs,
+                    StockS = stocks,
+                    StockM = stockm,
+                    StockL = stockl,
+                    StockXL = stockxl
                 };
 
                 db.AspNetArticulos.Add(Articulo);

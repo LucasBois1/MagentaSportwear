@@ -14,14 +14,37 @@
     };
 
     var nombre = document.getElementById("NombreInput").value;
-    var precio = document.getElementById("PrecioInput").value;
 
-    var data = "nombre="+nombre+"&precio=" + precio;
+    var precioxs = document.getElementById("PrecioXS").value;
+    var precios = document.getElementById("PrecioS").value;
+    var preciom = document.getElementById("PrecioM").value;
+    var preciol = document.getElementById("PrecioL").value;
+    var precioxl = document.getElementById("PrecioXL").value;
+
+    var stockxs = document.getElementById("StockXS").value;
+    var stocks = document.getElementById("StockS").value;
+    var stockm = document.getElementById("StockM").value;
+    var stockl = document.getElementById("StockL").value;
+    var stockxl = document.getElementById("StockXL").value;
+
+    var data = "nombre=" + nombre + "&precioxs=" + precioxs + "&precios=" + precios + "&preciom=" + preciom + "&preciol=" + preciol + "&precioxl=" + precioxl
+        + "&stockxs=" + stockxs + "&stocks=" + stocks + "&stockm=" + stockm + "&stockl=" + stockl + "&stockxl=" + stockxl;
 
     xhr.send(data);
 
-    document.getElementById("NombreInput").value = "";
-    document.getElementById("PrecioInput").value = "";
+    document.getElementById("nombre").value = "";
+
+    document.getElementById("PrecioXS").value = "";
+    document.getElementById("PrecioS").value = "";
+    document.getElementById("PrecioM").value = "";
+    document.getElementById("PrecioL").value = "";
+    document.getElementById("PrecioXL").value = "";
+
+    document.getElementById("StockXS").value = "";
+    document.getElementById("StockS").value = "";
+    document.getElementById("StockM").value = "";
+    document.getElementById("StockL").value = "";
+    document.getElementById("StockXL").value = "";
 
     document.getElementById("CloseButton").click();
 
@@ -63,7 +86,7 @@ function DeleteArt(id) {
 
 }
 
-function addArtRow(id, nombre, precio) {
+function addArtRow(id, nombre, precioxs, precios, preciom, preciol, precioxl, stockxs, stocks, stockm, stockl, stockxl) {
 
     var actions = '<div><button class="btn btn-sm" onclick="openModalDelete('+id+')"><img src="https://img.icons8.com/small/16/000000/trash--v1.png" /></button><button class="btn btn-sm"> <img src="https://img.icons8.com/small/16/000000/edit.png" /></button><div class="btn-group" role="group"><button id="btnGroupDrop1" type="button" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://img.icons8.com/small/16/000000/more.png" /></button><ul class="dropdown-menu"><li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/small/16/000000/zoom-in.png" /> Ver Imagen </a></li></ul></div></div >';
 
@@ -71,17 +94,33 @@ function addArtRow(id, nombre, precio) {
     var newRow = tableBody.insertRow(tableBody.rows.length);
     var ArtId = newRow.insertCell(0);
     var ArtName = newRow.insertCell(1);
-    var ArtPrice = newRow.insertCell(2);
-    var ArtActions = newRow.insertCell(3);
+    var ArtPriceXS = newRow.insertCell(2);
+    var ArtStockXS = newRow.insertCell(3);
+    var ArtPriceS = newRow.insertCell(4);
+    var ArtStockS = newRow.insertCell(5);
+    var ArtPriceM = newRow.insertCell(6);
+    var ArtStockM = newRow.insertCell(7);
+    var ArtPriceL = newRow.insertCell(8);
+    var ArtStockL = newRow.insertCell(9);
+    var ArtPriceXL = newRow.insertCell(10);
+    var ArtStockXL = newRow.insertCell(11);
+    var ArtActions = newRow.insertCell(12);
 
-    var Id = document.createTextNode(id);
-    var Name = document.createTextNode(nombre);
-    var Price = document.createTextNode("$" + precio);
     ArtActions.innerHTML = actions;
 
-    ArtId.appendChild(Id);
-    ArtName.appendChild(Name);
-    ArtPrice.appendChild(Price);
+    ArtId.appendChild(document.createTextNode(id));
+    ArtName.appendChild(document.createTextNode(nombre));
+    ArtPriceXS.appendChild(document.createTextNode("$" + precioxs));
+    ArtStockXS.appendChild(document.createTextNode(stockxs));
+    ArtPriceS.appendChild(document.createTextNode("$" + precios));
+    ArtStockS.appendChild(document.createTextNode(stocks));
+    ArtPriceM.appendChild(document.createTextNode("$" + preciom));
+    ArtStockM.appendChild(document.createTextNode(stockm));
+    ArtPriceL.appendChild(document.createTextNode("$" + preciol));
+    ArtStockL.appendChild(document.createTextNode(stockl));
+    ArtPriceXL.appendChild(document.createTextNode("$" + precioxl));
+    ArtStockXL.appendChild(document.createTextNode(stockxl));
+
 }
 
 function myFunction(items) {
@@ -89,9 +128,20 @@ function myFunction(items) {
 
     var id = item[0];
     var nombre = item[1];
-    var precio = item[2];
 
-    addArtRow(id, nombre, precio);
+    var precioxs = item[7];
+    var precios = item[8];
+    var preciom = item[9];
+    var preciol = item[10];
+    var precioxl = item[11];
+
+    var stockxs = item[2];
+    var stocks = item[3];
+    var stockm = item[4];
+    var stockl = item[5];
+    var stockxl = item[6];
+
+    addArtRow(id, nombre, precioxs, precios, preciom, preciol, precioxl, stockxs, stocks, stockm, stockl, stockxl);
 }
 
 function fillArtTable() {
@@ -107,6 +157,7 @@ function fillArtTable() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
             var items = xhr.response;
+            console.log(items)
             items.forEach(myFunction);
         }
     };

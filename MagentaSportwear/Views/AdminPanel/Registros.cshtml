@@ -19,7 +19,7 @@
 
 <!-- Modal Agregar Articulo -->
 <div class="modal fade" id="AddArticle" data-bs-backdrop="static" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Nuevo Articulo</h5>
@@ -29,6 +29,75 @@
                     <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
                     <input type="text" id="NombreInput" value="" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
+
+                <!-- Titles -->
+                <form class="row" style="margin-bottom: 2%;">
+                    <div class="col">
+                        <span>XS</span>
+                    </div>
+                    <div class="col">
+                        <span>S</span>
+                    </div>
+                    <div class="col">
+                        <span>M</span>
+                    </div>
+                    <div class="col">
+                        <span>L</span>
+                    </div>
+                    <div class="col">
+                        <span>XL</span>
+                    </div>
+                </form>
+
+                <!-- Price -->
+                <form class="row" style="margin-bottom: 2%;">
+                    <div class="col">
+                        <label class="visually-hidden">Precio XS</label>
+                        <input type="text" class="form-control"  placeholder="Price XS" id="PrecioXS">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Precio S</label>
+                        <input type="text" class="form-control" placeholder="Price S" id="PrecioS">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Precio M</label>
+                        <input type="text" class="form-control" placeholder="Price M" id="PrecioM">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Precio L</label>
+                        <input type="text" class="form-control" placeholder="Price L" id="PrecioL">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Precio XL</label>
+                        <input type="text" class="form-control" placeholder="Price XL" id="PrecioXL">
+                    </div>
+                </form>
+
+                <!-- Stock -->
+                <form class="row" style="margin-bottom: 2%;">
+                    <div class="col">
+                        <label class="visually-hidden">Stock XS</label>
+                        <input type="text" class="form-control" placeholder="Stock XS" id="StockXS">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Stock S</label>
+                        <input type="text" class="form-control" placeholder="Stock S" id="StockS">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Stock M</label>
+                        <input type="text" class="form-control" placeholder="Stock M" id="StockM">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Stock L</label>
+                        <input type="text" class="form-control" placeholder="Stock L" id="StockL">
+                    </div>
+                    <div class="col">
+                        <label class="visually-hidden">Stock XL</label>
+                        <input type="text" class="form-control" placeholder="Stock XL" id="StockXL">
+                    </div>
+                </form>
+
+                <!--
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-default">Precio</span>
                     <span class="input-group-text" style="color: #005c1c; background-color: #FFFFFF;">$</span>
@@ -38,9 +107,11 @@
                     <span class="input-group-text" id="inputGroup-sizing-default">Cant. en Stock</span>
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                 </div>
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Categorias</label>
-                    <select class="form-select" id="inputGroupSelect01">
+                -->
+
+                <div class="disabled input-group mb-3">
+                    <label class="input-group-text" for="disabledinputGroupSelect01">Categorias</label>
+                    <select class="form-select" id="inputGroupSelect01" disabled>
                         <option selected>Elige una categoria ...</option>
                         <option value="1">Remeras</option>
                         <option value="2">Pantalones</option>
@@ -50,38 +121,17 @@
                 </div>
                 <hr />
                 <div class="mb-3">
-                    <label for="formFileSm" class="form-label">Imagen del producto</label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file" accpet="image/*" multiple>
+                    <label for="formFileSm" class="form-label">Imagen del articulo</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file" accpet="image/*" multiple disabled>
                 </div>
                 <div class="mb-3">
-                    <label for="formFileSm" class="form-label">Preview del producto</label>
-                    <input class="form-control form-control-sm" id="formFileSm" type="file" accpet="image/*" multiple>
+                    <label for="formFileSm" class="form-label">Preview del articulo</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file" accpet="image/*" multiple disabled>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" id="CloseButton" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-success" onclick="addArticulo()">Agregar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Modal Agregar Categoria -->
-<div class="modal fade" id="AddCategory" data-bs-backdrop="static" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Nueva Categoria</h5>
-            </div>
-            <div class="modal-body">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success">Agregar</button>
             </div>
         </div>
     </div>
@@ -146,31 +196,22 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Articulo</th>
-                            <th scope="col">Valor ud.</th>
-                            <!--<th scope="col">Stock</th>-->
+                            <th scope="col">Precio XS</th>
+                            <th scope="col">Stock XS</th>
+                            <th scope="col">Precio S</th>
+                            <th scope="col">Stock S</th>
+                            <th scope="col">Precio M</th>
+                            <th scope="col">Stock M</th>
+                            <th scope="col">Precio L</th>
+                            <th scope="col">Stock L</th>
+                            <th scope="col">Precio XL</th>
+                            <th scope="col">Stock XL</th>
                             <!--<th scope="col">Categoria</th>-->
                             <th scope="col" style="max-width: 2rem; width: 15%;">Acciones</th>
                         </tr>
                     </thead>
                     <tbody id="ArtTableBody">
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Articulo Uno</td>
-                            <td>$500</td>
-                            <td>
-                                <div>
-                                    <button class="btn btn-sm"> <img src="https://img.icons8.com/small/16/000000/trash--v1.png" /> </button>
-                                    <button class="btn btn-sm"> <img src="https://img.icons8.com/small/16/000000/edit.png" /> </button>
-                                    <div class="btn-group" role="group">
-                                        <button id="btnGroupDrop1" type="button" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="https://img.icons8.com/small/16/000000/more.png" />
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#"><img src="https://img.icons8.com/small/16/000000/zoom-in.png" /> Ver Imagen </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </td>
                         </tr>
                     </tbody>
                 </table>
